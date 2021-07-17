@@ -1,11 +1,8 @@
+import java.io.IOException;
 import java.util.List;
 
-public class Output {
+public interface Output {
 
-	public void write(List<String> lines, SystemWrapper systemWrapper) {
-
-		lines.forEach(e -> systemWrapper.println(e));
-
-	}
+	public void write(List<String> lines)  throws IOException ;
 
 }

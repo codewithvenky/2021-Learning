@@ -1,0 +1,4 @@
+com\venky\aws\lambda\OrderHandler.class
+com\venky\aws\lambda\domain\Order.class
+com\venky\aws\lambda\respository\OrderDao.class
+com\venky\aws\lambda\SpringbootAwsLambdaApplication.class

@@ -1,10 +1,12 @@
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Input {
+public interface Input {
 
-	public List<String> read(ScannerWrapper scannerWrapper, SystemWrapper systemWrapper) {
+ public	List<String> read() throws IOException;
+	/*public List<String> read(ScannerWrapper scannerWrapper, SystemWrapper systemWrapper) {
 		List<String> list = new ArrayList<String>();
 		ScannerWrapper sw = ScannerWrapper.getInstance();
 		while (sw.hasNext()) {
@@ -18,4 +20,5 @@ public class Input {
 		return list;
 	}
 
+	*/
 }
