@@ -19,7 +19,6 @@ public class InputFromConsoleTest {
 		scannerWrapper = Mockito.mock(ScannerWrapper.class);
 		systemWrapper = Mockito.mock(SystemWrapper.class);
 		input = new InputFromConsole(scannerWrapper, systemWrapper);
-
 	}
 
 	@Test
