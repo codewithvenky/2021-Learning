@@ -120,4 +120,29 @@ public class DefensiveWarrior implements Warrior {
 
 	}
 
+	@Override
+	public int calculateAttack() {
+		// TODO Auto-generated method stub
+		return this.level +this.attack;
+	}
+
+	@Override
+	public int calculateDefense() {
+		// TODO Auto-generated method stub
+		return this.defense + this.level*2;
+	}
+
+	@Override
+	public double calculateBoost() {
+	
+		double d =((double)this.defense/2);
+		return d;
+	}
+
+	@Override
+	public double calculatePower() {
+		// TODO Auto-generated method stub
+		return  calculateBoost() +calculateAttack() +calculateDefense();
+	}
+
 }

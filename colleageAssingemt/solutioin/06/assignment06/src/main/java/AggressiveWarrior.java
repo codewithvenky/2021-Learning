@@ -1,11 +1,10 @@
 
-
-public class DefensiveWarrior implements Warrior {
+public class AggressiveWarrior implements Warrior {
 	private int level;
 	private int attack;
 	private int defense;
 
-	public DefensiveWarrior(int level) {
+	public AggressiveWarrior(int level) {
 		super();
 		this.level = level;
 	}
@@ -75,16 +74,16 @@ public class DefensiveWarrior implements Warrior {
 		}
 
 		Warrior build() {
-			Warrior w = new DefensiveWarrior(this.level);
+			Warrior w = new AggressiveWarrior(this.level);
 
 			if (this.attack == 0) {
 				// default value of the AggressiveWarrior
-				w.setAttack(2);
+				w.setAttack(3);
 			} else {
 				w.setAttack(this.attack);
 			}
 			if (this.defense == 0) {
-				w.setDefense(3);
+				w.setDefense(2);
 			} else {
 				w.setDefense(this.defense);
 			}
@@ -120,4 +119,27 @@ public class DefensiveWarrior implements Warrior {
 
 	}
 
+	@Override
+	public int calculateAttack() {
+		return this.attack + this.level*2;
+	}
+
+	@Override
+	public int calculateDefense() {
+		// TODO Auto-generated method stub
+		return this.defense + this.level;
+	}
+
+	@Override
+	public double calculateBoost() {
+		
+		double d =((double)this.attack/2);
+		return d;
+	}
+
+	@Override
+	public double calculatePower() {
+		// TODO Auto-generated method stub
+		return  calculateBoost() +calculateAttack() +calculateDefense();
+	}
 }
