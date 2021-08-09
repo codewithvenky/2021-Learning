@@ -12,14 +12,14 @@ public class MasterControl {
 
 	public void start(ScannerWrapper scannerWrapper, SystemWrapper systemWrapper) throws IOException {
 
-		// Scanner s = new Scanner(System.in);
-		System.out.println("Please enter FILE to input from file or CONSOLE to input from console:");
+	
+		systemWrapper.println("Please enter FILE to input from file or CONSOLE to input from console:");
 		String input = scannerWrapper.nextLine();
 		inputFactory = new InputFactory(scannerWrapper, systemWrapper);
 		outputFactory = new OutputFactory(systemWrapper);
 
 		i = inputFactory.create(input);
-		System.out.println("Plese enter FILE to output from file or  CONSOLE to output from console");
+		systemWrapper.println("Plese enter FILE to output from file or  CONSOLE to output from console");
 		String output = scannerWrapper.nextLine();
 		out = outputFactory.create(output);
 
