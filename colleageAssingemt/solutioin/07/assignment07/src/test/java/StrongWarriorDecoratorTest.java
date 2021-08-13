@@ -53,4 +53,5 @@ class StrongWarriorDecoratorTest {
 		Warrior warrior = new StrongWarriorDecorator(new DefensiveWarrior.Builder(1).attack(10).build());
 		assertEquals(27.5, warrior.calculatePower());
 	}
+
 }
