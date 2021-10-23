@@ -1,67 +1,222 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="AggressiveWarrior" project="assgnment06" 
-    file="/assgnment06/src/main/java/AggressiveWarrior.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="322" width="164" x="328" y="37"/>    
+  <class id="1" language="java" name="AggressiveWarrior" project="assgnment08" 
+    file="/assgnment08/src/main/java/AggressiveWarrior.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="315" width="144" x="1561" y="96"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="AggressiveWarrior.Builder" project="assgnment06" 
-    file="/assgnment06/src/main/java/AggressiveWarrior.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="196" width="137" x="423" y="399"/>    
+  <class id="2" language="java" name="ArmoredWarriorDecorator" project="assgnment08" 
+    file="/assgnment08/src/main/java/ArmoredWarriorDecorator.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="196" x="1959" y="451"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="DefensiveWarrior.Builder" project="assgnment06" 
-    file="/assgnment06/src/main/java/DefensiveWarrior.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="196" width="137" x="42" y="399"/>    
+  <class id="3" language="java" name="CombatContext" project="assgnment08" 
+    file="/assgnment08/src/main/java/CombatContext.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="168" x="413" y="451"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="DefensiveWarrior" project="assgnment06" 
-    file="/assgnment06/src/main/java/DefensiveWarrior.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="322" width="164" x="124" y="37"/>    
+  <class id="4" language="java" name="AttackCombadtState" project="assgnment08" 
+    file="/assgnment08/src/main/java/AttackCombadtState.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="168" x="205" y="451"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <interface id="5" language="java" name="Warrior" project="assgnment06" file="/assgnment06/src/main/java/Warrior.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="250" width="164" x="219" y="399"/>    
+  <interface id="5" language="java" name="CombatState" project="assgnment08" 
+    file="/assgnment08/src/main/java/CombatState.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="168" x="725" y="734"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <realization id="6">    
+  <class id="6" language="java" name="DefensiveWarrior" project="assgnment08" 
+    file="/assgnment08/src/main/java/DefensiveWarrior.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="315" width="144" x="1745" y="96"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="7" language="java" name="Warrior" project="assgnment08" file="/assgnment08/src/main/java/Warrior.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="243" width="144" x="1775" y="451"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="8" language="java" name="InverseCombatState" project="assgnment08" 
+    file="/assgnment08/src/main/java/InverseCombatState.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="168" x="621" y="451"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="TraditionalCombatState" project="assgnment08" 
+    file="/assgnment08/src/main/java/TraditionalCombatState.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="168" x="829" y="451"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="StrongWarriorDecorator" project="assgnment08" 
+    file="/assgnment08/src/main/java/StrongWarriorDecorator.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="186" x="2195" y="451"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="DefensiveWarrior.Builder" project="assgnment08" 
+    file="/assgnment08/src/main/java/DefensiveWarrior.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="121" x="1614" y="451"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="DefenseCombatState" project="assgnment08" 
+    file="/assgnment08/src/main/java/DefenseCombatState.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="168" x="1037" y="451"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="AggressiveWarrior.Builder" project="assgnment08" 
+    file="/assgnment08/src/main/java/AggressiveWarrior.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="121" x="1453" y="451"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="Combat" project="assgnment08" file="/assgnment08/src/main/java/Combat.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="167" x="413" y="96"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="WarriorDecorator" project="assgnment08" 
+    file="/assgnment08/src/main/java/WarriorDecorator.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="261" width="154" x="1929" y="96"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="PowerCombatState" project="assgnment08" 
+    file="/assgnment08/src/main/java/PowerCombatState.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="168" x="1245" y="451"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <realization id="17">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="5"/>  
+  </realization>  
+  <realization id="18">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
+  <realization id="19">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
+  <association id="20">    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="21" name="combatContext"/>      
+      <multiplicity id="22" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="23">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="11"/>  
+  </nesting>  
+  <generalization id="24">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="15"/>  
+  </generalization>  
+  <realization id="25">    
     <end type="SOURCE" refId="4"/>    
     <end type="TARGET" refId="5"/>  
   </realization>  
-  <realization id="7">    
-    <end type="SOURCE" refId="1"/>    
+  <association id="26">    
+    <end type="SOURCE" refId="15" navigable="false">      
+      <attribute id="27" name="warrior"/>      
+      <multiplicity id="28" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="29">    
+    <end type="SOURCE" refId="8"/>    
     <end type="TARGET" refId="5"/>  
   </realization>  
-  <nesting id="8">    
+  <nesting id="30">    
     <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="2"/>  
+    <end type="TARGET" refId="13"/>  
   </nesting>  
-  <nesting id="9">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="3"/>  
-  </nesting>  
+  <generalization id="31">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="15"/>  
+  </generalization>  
+  <association id="32">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="33" name="state"/>      
+      <multiplicity id="34" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="35">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="5"/>  
+  </realization>  
+  <realization id="36">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="5"/>  
+  </realization>  
+  <realization id="37">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    
